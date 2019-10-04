@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(a) {
+        if(a<2){
+            return false;
+        }
+        if(a==2){
+            return true ;
+        }
+        var count =0
+        for(var i=2;i<a;i++){
+            if(a%i==0){
+                count++;
+            }
+        }
+        if(count>0){
+            return false;
+        }else{
+            return true ;
+        }
+    }
+
+    var a = parseInt(prompt("Nhap 1 so can xet"))
+    alert( " is "+a+" a prime number ?  "+ isPrime(a))
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt("nhap diem toan"))
+    var b = parseInt(prompt("nhap diem van"))
+    var c = parseInt(prompt("Nhap diem tieng anh "))
+
+
+    while (a<0||a>10){
+        a = parseInt(prompt("diem toan khong dung nhap lai diem toan"))
+    }
+    while (b<0||b>10){
+        b= parseInt(prompt("diem van khong dung nhap lai diem van"))
+    }
+    while (c<0||c>10){
+        c=parseInt(prompt("diem tieng anh khong dung nhap lai diem t.a"))
+    }
+    var average =(a*2+b+c*2)/5
+    if(average<5){
+        alert("khong dat")
+    }else if(average>=5&&average<7.5){
+        alert("Dat")
+    }else if(average>=7.5&&average<8.5){
+        alert("Kha")
+    }else{
+        alert("gioi")
+    }
+</script>
+</body>
+</html>
